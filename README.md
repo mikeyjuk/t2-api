@@ -22,6 +22,10 @@ Swagger documentation is here:
 
 https://localhost:7140/swagger/index.html
 
+### API Key
+
+The API key required by the AireLogic API is retrieved from an environment variable called API_SUBSCRIPTION_KEY, setup on the local machine to simulate a keyvault or similar secret store that would be implemented on the chosen hosting platform and to avoid leaving sensitive information in config files.
+
 ### Scoring Mechanism
 
 The code to generate the risk score was implemented within the API to help facilitate the possibility of allowing the scoring matrix to be updated without requiring a new build and release of the code as it would allow for the data to be stored in and retrieved from a data store of some kind, a document database, a relational database or even an API.
